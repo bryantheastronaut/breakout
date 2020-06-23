@@ -9,6 +9,7 @@ public class SceneLoader : MonoBehaviour {
         SceneManager.LoadScene(currentSceneIdx + 1);
     }
     public void LoadStartScreen() {
+        FindObjectOfType<GameSession>().ResetGame();
         SceneManager.LoadScene(0);
     }
 
